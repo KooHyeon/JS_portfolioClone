@@ -98,14 +98,13 @@ p{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
-  color: var(--color-white);
   padding: 16px;
-  transition: all var(--animation-duration) ease-in-out;
+  background-color: transparent;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-light-grey);
+  background-color: var(--color-light-white);
   padding: 8px;
 }
 
@@ -125,31 +124,34 @@ p{
 
 .navbar__menu {
   display: flex;
-  justify-content: space-between;
 }
 
-.navbar__menu__item {
+  .navbar__menu__item {
   padding: 8px 12px;
   margin: 0 4px;
+  color: var(--color-white);
   cursor: pointer;
-  border-radius: var(--size-border-radius);
 }
 
 .navbar__menu__item.active {
-  border: 1px solid var(--color-white);
+  border: 1px solid white;
+  border-radius: var(--size-border-radius);
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-light-grey);
+  background-color: var(--color-dark-pink);
+  border-radius: var(--size-border-radius);
 }
 
 .navbar__toggle-btn {
   position: absolute;
+  top: 24px;
   right: 32px;
   font-size: 24px;
   color: var(--color-white);
   display: none;
 }
+
 
 /* Home */
 
@@ -470,7 +472,7 @@ p{
 
 /* Contact */
 #contact {
-  background-color: var(--color-pink);
+  background-color: var(--color-light-grey);
 }
 
 .contact__email,
