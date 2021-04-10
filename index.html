@@ -183,53 +183,59 @@
       <h1>My work</h1>
       <h3>Projects</h3>
       <div class="work__categories">
-        <button class="category__btn">All <span class="category__count">5</span></button>
-        <button class="category__btn">Front-end <span class="category__count">3</span></button>
-        <button class="category__btn">Mobile <span class="category__count">1</span></button>
-        <button class="category__btn">Design <span class="category__count">1</span></button>
+        <button class="category__btn" data-filter="*">
+          All<span class="category__count">5</span>
+        </button>
+        <button class="category__btn" data-filter="front-end">
+          Front-end<span class="category__count">3</span></button>
+        <button class="category__btn" data-filter="back-end"> 
+          Mobile<span class="category__count">1</span></button>
+        <button class="category__btn" data-filter="mobile">
+          Design<span class="category__count">1</span></button>
       </div>
 
       <div class="work__projects">
-        <a href="#" class="project" target="blank">
+        <a href="#" class="project" target="blank" data-type="front-end">
           <img src="./imgs/projects/project1.png" alt="" class="project__img">
           <div class="project__description">
             <h3>Youtube Site</h3>
             <span>Clone coding with HTML and CSS</span>
           </div>
         </a>
-        <a href="#" class="project" target="blank">
+        <a href="#" class="project" target="blank" data-type="front-end">
           <img src="./imgs/projects/project2.png" alt="" class="project__img">
           <div class="project__description">
             <h3>Youtube Site</h3>
             <span>Clone coding with HTML and CSS</span>
           </div>
         </a>
-        <a href="#" class="project" target="blank">
+        <a href="#" class="project" target="blank" data-type="back-end">
           <img src="./imgs/projects/project3.png" alt="" class="project__img">
           <div class="project__description">
             <h3>Youtube Site</h3>
             <span>Clone coding with HTML and CSS</span>
           </div>
         </a>
-        <a href="#" class="project" target="blank">
+        <a href="#" class="project" target="blank" data-type="back-end">
           <img src="./imgs/projects/project4.png" alt="" class="project__img">
           <div class="project__description">
             <h3>Youtube Site</h3>
             <span>Clone coding with HTML and CSS</span>
           </div>
         </a>
-        <a href="#" class="project" target="blank">
+        <a href="#" class="project" target="blank" data-type="mobile">
           <img src="./imgs/projects/project5.png" alt="" class="project__img">
           <div class="project__description">
             <h3>Youtube Site</h3>
             <span>Clone coding with HTML and CSS</span>
           </div>
         </a>
-        <a href="#" class="project" target="blank">
+        <a href="#" class="project" target="blank" data-type="mobile">
           <img src="./imgs/projects/project6.png" alt="" class="project__img">
           <div class="project__description">
             <h3>Youtube Site</h3>
             <span>Clone coding with HTML and CSS</span>
+          </div>
         </a>
       </div>
   </section>
