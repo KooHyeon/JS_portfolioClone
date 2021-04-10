@@ -36,6 +36,20 @@ document.addEventListener('scroll', () => {
     home.style.opacity = 1 - window.scrollY / homeHeight;
 })
 
+// Show "arrow up" button when scrolling down
+const topBtn = document.querySelector('.topBtn');
+window.addEventListener('scroll', () => {
+    if(window.scrollY > homeHeight) {
+        topBtn.classList.add('on');
+    } else {
+        topBtn.classList.remove('on');
+    }
+})
+
+topBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth'});
+})
+
 
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
