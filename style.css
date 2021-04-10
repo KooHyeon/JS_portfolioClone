@@ -139,7 +139,8 @@ p{
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-dark-pink);
+  color: var(--color-black);
+  background-color: var(--color-white);
   border-radius: var(--size-border-radius);
 }
 
@@ -399,9 +400,7 @@ p{
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
+  background-color: black; 
   opacity: 0;
   transform: translateY(10px);
   transition: all var(--animation-duration) ease-in;
