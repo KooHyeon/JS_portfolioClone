@@ -59,6 +59,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  padding: 0;
 }
 
 /* Typography */
@@ -126,12 +127,19 @@ p{
   display: flex;
 }
 
-  .navbar__menu__item {
+.navbar__menu__item {
   padding: 8px 12px;
   margin: 0 4px;
   color: var(--color-white);
   cursor: pointer;
   border: 1px solid transparent;
+}
+
+.navbar__menu__item.active {
+  border: 1px solid var(--color-dark-grey);
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border-radius: var(--size-border-radius);
 }
 
 
@@ -257,7 +265,7 @@ p{
 }
 
 .major__icon:hover i {
-  color: var(--color-pink);
+  color: var(--color-dark-grey);
   transform: rotate(15deg) scale(1.2);
 }
 
@@ -370,7 +378,7 @@ p{
 
 .category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-pink);
+  background-color: var(--color-light-white);
   color: var(--color-white);
 }
 
@@ -385,7 +393,7 @@ p{
   height: 24px;
   display: inline-block;
   line-height: 24px;
-  background-color: var(--color-orange);
+  background-color: var(--color-dark-grey);
   border-radius: 50%;
   color: var(--color-white);
   position: absolute;
